@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LazyLogic.ai | Automate the work. Keep the wins.</title>
+    <title>LazyLogic.ai | Command Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
-        :root { --bg: #020205; --accent: #3b82f6; --purple: #8b5cf6; --glow: rgba(59, 130, 246, 0.5); }
+        :root { --bg: #020205; --accent: #3b82f6; --purple: #8b5cf6; --glow: rgba(59, 130, 246, 0.4); }
         body { margin: 0; font-family: "Inter", sans-serif; background: var(--bg); color: white; overflow-x: hidden; background-image: radial-gradient(circle at 50% -20%, #1e293b, #020205); }
         .nav { padding: 40px 8%; display: flex; align-items: center; justify-content: space-between; }
-        .logo { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 1.8rem; }
-        .logo img { height: 50px; filter: drop-shadow(0 0 10px var(--glow)); border-radius: 10px; }
+        .logo { display: flex; align-items: center; gap: 15px; font-weight: 800; font-size: 1.8rem; }
+        .logo img { height: 50px; filter: drop-shadow(0 0 10px var(--glow)); border-radius: 12px; }
         .hero { display: flex; align-items: center; padding: 40px 8% 80px; min-height: 70vh; gap: 60px; }
         .hero-content { flex: 1.2; }
-        .hero-content h1 { font-size: 4.5rem; font-weight: 800; line-height: 1; margin-bottom: 24px; background: linear-gradient(to bottom right, #fff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero-content p { font-size: 1.3rem; color: #94a3b8; margin-bottom: 48px; max-width: 520px; line-height: 1.6; }
-        .cta-btn { padding: 20px 45px; background: linear-gradient(135deg, var(--accent), var(--purple)); border-radius: 50px; text-decoration: none; color: white; font-weight: 700; box-shadow: 0 0 40px var(--glow); transition: 0.3s; display: inline-block; }
+        .hero-content h1 { font-size: 4.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 24px; background: linear-gradient(to bottom right, #fff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-content p { font-size: 1.3rem; color: #94a3b8; margin-bottom: 40px; max-width: 520px; line-height: 1.6; }
+        .cta-btn { padding: 20px 45px; background: linear-gradient(135deg, var(--accent), var(--purple)); border-radius: 50px; text-decoration: none; color: white; font-weight: 700; box-shadow: 0 0 40px var(--glow); transition: 0.3s; display: inline-block; cursor: pointer; border:none; }
         .hero-visual { flex: 1; perspective: 2000px; }
         .glass-panel { 
             background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.01)); 
@@ -24,31 +25,32 @@
             box-shadow: -40px 40px 80px rgba(0,0,0,0.8);
         }
         .workflow-svg { width: 100%; height: auto; filter: drop-shadow(0 0 15px var(--accent)); }
-        .bot-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px; padding: 60px 8%; }
-        .bot-card { background: rgba(15,23,42,0.6); padding: 25px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
-        .bot-card:hover { border-color: var(--accent); transform: translateY(-5px); }
-        .status-dot { width: 8px; height: 8px; background: #00ff41; border-radius: 50%; display: inline-block; margin-right: 8px; box-shadow: 0 0 10px #00ff41; }
+        .bot-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; padding: 60px 8%; background: rgba(0,0,0,0.3); }
+        .bot-card { background: rgba(15,23,42,0.6); padding: 30px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
+        .bot-card:hover { border-color: var(--accent); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2); }
+        .status-dot { width: 10px; height: 10px; background: #00ff41; border-radius: 50%; display: inline-block; margin-right: 10px; box-shadow: 0 0 10px #00ff41; }
     </style>
 </head>
 <body>
     <div class="nav">
         <div class="logo"><img src="logo.png" onerror="this.src=\"https://i.imgur.com/8Yv6Z9P.png\""> LazyLogic.ai</div>
-        <div style="font-size: 0.8rem; opacity: 0.6; text-align: right;">CHAIRMAN VIEW<br><strong>OPERATIONAL</strong></div>
+        <div style="text-align: right; font-size: 0.8rem; opacity: 0.5;">CHAIRMAN VIEW<br><strong>SYSTEM OPERATIONAL</strong></div>
     </div>
     <section class="hero">
         <div class="hero-content">
             <h1>Automate the work.<br>Keep the wins.</h1>
             <p>LazyLogic AI connects your tools, thinks through the logic, and executes workflows so you can grow on autopilot.</p>
-            <a href="#" class="cta-btn">Start free with AI flows</a>
+            <button class="cta-btn">Start free with AI flows</button>
         </div>
         <div class="hero-visual">
             <div class="glass-panel">
                 <svg viewBox="0 0 400 300" class="workflow-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="80" r="10" fill="#3b82f6" />
-                    <path d="M60 80H140V150H200" stroke="#3b82f6" stroke-width="3" stroke-dasharray="5,5" />
-                    <rect x="200" y="130" width="120" height="40" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2" />
-                    <text x="220" y="155" fill="white" font-size="12" font-weight="bold">LOGIC ENGINE</text>
-                    <path d="M320 150H360V220H380" stroke="#8b5cf6" stroke-width="3" />
+                    <circle cx="50" cy="80" r="12" fill="#3b82f6" />
+                    <path d="M62 80H140V150H200" stroke="#3b82f6" stroke-width="3" stroke-dasharray="8,5" />
+                    <rect x="200" y="125" width="130" height="50" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2" />
+                    <text x="215" y="155" fill="white" font-size="14" font-weight="bold">LOGIC ENGINE</text>
+                    <path d="M330 150H360V220H380" stroke="#8b5cf6" stroke-width="3" />
+                    <circle cx="380" cy="220" r="10" fill="#8b5cf6" />
                 </svg>
             </div>
         </div>
@@ -62,7 +64,7 @@
             data.bot_roster.forEach(bot => {
                 const card = document.createElement("div");
                 card.className = "bot-card";
-                card.innerHTML = `<div style="display:flex;justify-content:space-between"><strong>${bot.id}</strong><div class="status-dot"></div></div><p style="color:#64748b;font-size:0.8rem;margin:10px 0;">${bot.role}</p><div style="font-size:0.7rem;opacity:0.6">${bot.status.toUpperCase()}</div>`;
+                card.innerHTML = "<div style=\"display:flex;justify-content:space-between;align-items:center\"><strong>" + bot.id + "</strong><div class=\"status-dot\"></div></div><p style=\"color:#64748b;font-size:0.9rem;margin:15px 0 5px;\">" + bot.role + "</p><div style=\"font-size:0.75rem;opacity:0.4;letter-spacing:1px\">" + bot.status.toUpperCase() + "</div>";
                 container.appendChild(card);
             });
         });
