@@ -1,1 +1,13 @@
-{"bot_roster":[{"id":"VERITAS","role":"Logic Auditor","status":"Analyzing system integrity and truth-parameters."},{"id":"SOLON","role":"Strategic Governor","status":"Optimizing resource allocation and project architecture."},{"id":"APEX","role":"Executive Autonomist","status":"Coordinating high-level deployment and site sync."},{"id":"LAZYBOT-01","role":"Content Specialist","status":"Standby for creative asset generation."},{"id":"LAZYBOT-02","role":"Data Engineer","status":"Monitoring pipeline throughput."}]}
+{
+  "bot_roster": [
+    {"id": "VERITAS", "role": "Logic Auditor", "status": "Analyzing system integrity and truth-parameters."},
+    {"id": "SOLON", "role": "Strategic Governor", "status": "Optimizing resource allocation and architecture."},
+    {"id": "APEX", "role": "Executive Autonomist", "status": "Coordinating high-level deployment and site sync."},
+    {"id": "LYNX", "role": "Network Sentinel", "status": "Monitoring encrypted traffic and node security."},
+    {"id": "CHRONOS", "role": "Temporal Scheduler", "status": "Managing workflow timing and task priority."},
+    {"id": "VANGUARD", "role": "Risk Evaluator", "status": "Simulating threat models and system stress."},
+    {"id": "ORACLE", "role": "Predictive Analyst", "status": "Processing data trends for future scaling."},
+    {"id": "LAZYBOT-01", "role": "Content Specialist", "status": "Standby for creative asset generation."},
+    {"id": "LAZYBOT-02", "role": "Data Engineer", "status": "Monitoring pipeline throughput."}
+  ]
+}
