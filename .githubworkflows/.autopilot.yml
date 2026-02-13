@@ -1,0 +1,31 @@
+name: Lazylogic_autopilot_v2
+
+# This tells the bots to wake up whenever you change something
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Veritas Validation
+        run: |
+          echo "Veritas is checkin' the facts..."
+          cat manifest.json | jq .
+
+      - name: Forge Execution
+        run: |
+          echo "Forge is buildin' out the squad..."
+          # This is where the magic happens later
+
+      - name: Catalyst Deployment
+        run: |
+          echo "Catalyst is pushin' everything live..."
+          # This links to your hosting later
