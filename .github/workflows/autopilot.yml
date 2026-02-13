@@ -1,0 +1,27 @@
+name: Lazylogic_autopilot_v2
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Veritas Validation
+        run: |
+          echo "Veritas is checkin' the facts..."
+          # This just checks if our manifest exists
+          ls manifest.json
+
+      - name: Forge Execution
+        run: |
+          echo "Forge is buildin' out the squad..."
+
+      - name: Catalyst Deployment
+        run: |
+          echo "Catalyst is pushin' everything live..."
